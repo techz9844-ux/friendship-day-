@@ -7,6 +7,6 @@ body:before{content:'';position:fixed;inset:-50%;background:radial-gradient(circ
 @keyframes b{50%{transform:translateY(-12px) scale(1.05)}}
 #pop{display:none;margin-top:20px}
 button{padding:12px 24px;border:none;border-radius:24px;background:#ff4d6d;color:#fff}
-</style></head><body><div class='card'><h2>One Last Surprise...</h2><div class='gift' onclick='openGift()'>🎁</div><div id='pop'><p>Not everything precious comes wrapped in paper...<br>The real surprise is still waiting ahead.</p><button onclick="location.href='letter.html'">Continue ➜</button></div></div><script>
+</style></head><body><div class='card'><h2>One Last Surprise... What's inside it ? (click)</h2><div class='gift' onclick='openGift()'>🎁</div><div id='pop'><p>Not everything precious comes wrapped in paper...<br>The real surprise is still waiting ahead.</p><button onclick="location.href='letter.html'">Continue ➜</button></div></div><script>
 function openGift(){document.getElementById('pop').style.display='block';for(let i=0;i<80;i++){let c=document.createElement('div');c.textContent=['🎉','✨','💖'][i%3];c.style.position='fixed';c.style.left=Math.random()*100+'vw';c.style.top=Math.random()*100+'vh';c.style.fontSize='24px';document.body.appendChild(c);setTimeout(()=>c.remove(),1500);}}
 </script></body></html>
